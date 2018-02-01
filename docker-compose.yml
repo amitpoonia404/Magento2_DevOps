@@ -28,6 +28,8 @@ services:
     percona:
         image: percona
         restart: always
+        ports:
+            - 3306:3306
         volumes:
             - ./docker/mysql/data/percona:/var/lib/mysql
             - ./docker/mysql/dumps:/dumps
