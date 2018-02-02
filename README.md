@@ -3,7 +3,9 @@ Step 1: cd at the root of the project. also change ports as per convenience in d
 Step 2: sudo docker-compose up -d
 
 Step 3: Run the setup-work.sh 
-sudo ./setup-work.sh (it will download to the dependencies of Magento 2), in that part you will need the magento credentials, in the magento site https://marketplace.magento.com / customer / accessKeys /. After installation, it will mount in the src / folder where all the files in Magento 2 will be.
+sudo ./setup-work.sh (it will download to the dependencies of Magento 2), in that part you will need the magento credentials, in the magento site https://marketplace.magento.com / customer / accessKeys /. After installation, it will mount in the src/ folder where all the files in Magento 2 will be.
+
+--Note: Skip this step if you want to install magento setup from tar.gz, just extract the contents of setup archive in src/ folder
 
 Step 4: Create your route on the sudo nano /etc/hosts hosts (change the MAGE_SETUP_BASE_URL = http: //it.mage-two/ in the .env file)
 
