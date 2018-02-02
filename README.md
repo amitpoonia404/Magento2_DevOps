@@ -1,6 +1,6 @@
-Step 1: cd at the root of the project
+Step 1: cd at the root of the project. also change ports as per convenience in docker-compose.yml.
 
-Step 2: sudo docker-compose up.
+Step 2: sudo docker-compose up -d
 
 Step 3: Run the setup-work.sh 
 sudo ./setup-work.sh (it will download to the dependencies of Magento 2), in that part you will need the magento credentials, in the magento site https://marketplace.magento.com / customer / accessKeys /. After installation, it will mount in the src / folder where all the files in Magento 2 will be.
